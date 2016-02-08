@@ -10,8 +10,8 @@ LINKOBJ = "object.gp2x/tesc_seleccion_idioma.o" "object.gp2x/profanation.o" "obj
 LIBS = -lSDL -lSDL_image -lSDL_gfx -lSDL_mixer
 
 BIN  = profanation
-CXXFLAGS = -DSMALL_GAME -DTARGET_GP2X -O2 -Wall
-CFLAGS = -DSMALL_GAME -DTARGET_GP2X -O2 -Wall
+CXXFLAGS = -DSMALL_GAME -DLINUX -O2 -Wall
+CFLAGS = -DSMALL_GAME -DLINUX -O2 -Wall
 RM = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
