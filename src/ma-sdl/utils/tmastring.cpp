@@ -109,11 +109,14 @@ TMAString TMAString::trim(void)
     return mid(begin,(end-begin+1));
 }
 
+#if 0
+// FIXME: fcvt() is missing in OpenDingux toolchain for some reason
 TMAString TMAString::numToStr(long num,int ndig)
 {
     int dec, sign;
     return TMAString(fcvt(num, ndig, &dec, &sign));
 }
+#endif
 
 const long TMAString::intValue(void)
 {

@@ -157,7 +157,9 @@ class TMAString:public TMAObject
         
         const int length(void) {return size;};
         const int findStr(TMAString& Sub);
+#if 0
         TMAString numToStr(long num,int ndig);
+#endif
         const long intValue(void);
         TMAString toUpperCase(void);
         TMAString toLowerCase(void);
