@@ -181,8 +181,8 @@ TProfanationGame::~TProfanationGame()
         inputController.setStatus(GKEY_UP,   KeyState[SDLK_UP]);
         inputController.setStatus(GKEY_DOWN, KeyState[SDLK_DOWN]);
     
-        inputController.setStatus(GKEY_LONG_JUMP, KeyState[SDLK_UP]);
-        inputController.setStatus(GKEY_SHORT_JUMP,KeyState[SDLK_DOWN]);
+        inputController.setStatus(GKEY_LONG_JUMP, KeyState[SDLK_LCTRL]);
+        inputController.setStatus(GKEY_SHORT_JUMP,KeyState[SDLK_LALT]);
     
         inputController.setStatus(GKEY_SELECT,KeyState[SDLK_RETURN]);
         inputController.setStatus(GKEY_ABORT,KeyState[SDLK_ESCAPE]);
